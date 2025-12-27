@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service | AquaAlert</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e88e5;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      margin-top: 25px;
+      color: #1e88e5;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .updated {
+      font-size: 14px;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 10px;
+        padding: 18px;
+      }
+
+      header h1 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Terms of Service</h1>
+  </header>
+
+  <div class="container">
+    <p class="updated">
+      Last updated: <span id="lastUpdated"></span>
+    </p>
+
+    <p>
+      Welcome to <strong>AquaAlert</strong>. By downloading, accessing, or using
+      our application, you agree to be bound by these Terms of Service. If you do
+      not agree with these terms, please do not use the app.
+    </p>
+
+    <h2>1. Use of the App</h2>
+    <p>
+      AquaAlert is a water reminder and health utility app designed to help users
+      track and improve their daily hydration habits. The app is intended for
+      general wellness purposes only and should not be considered medical advice.
+    </p>
+
+    <h2>2. User Responsibilities</h2>
+    <ul>
+      <li>You agree to use the app only for lawful purposes.</li>
+      <li>You are responsible for maintaining the confidentiality of your account.</li>
+      <li>You must not misuse, reverse engineer, or attempt to harm the app.</li>
+    </ul>
+
+    <h2>3. Subscriptions & Payments</h2>
+    <p>
+      AquaAlert may offer premium features through subscriptions. All payments are
+      processed via the Google Play Store or Apple App Store. Subscription fees,
+      billing cycles, and cancellation policies are governed by their respective
+      platforms.
+    </p>
+
+    <h2>4. Data & Privacy</h2>
+    <p>
+      Your privacy is important to us. We collect and use data only as described
+      in our Privacy Policy. We do not sell your personal data to third parties.
+    </p>
+
+    <h2>5. Health Disclaimer</h2>
+    <p>
+      AquaAlert does not provide medical advice. Always consult a qualified health
+      professional before making any health-related decisions.
+    </p>
+
+    <h2>6. Limitation of Liability</h2>
+    <p>
+      AquaAlert and its developers are not liable for any damages arising from the
+      use or inability to use the app, including but not limited to health issues,
+      data loss, or service interruptions.
+    </p>
+
+    <h2>7. Changes to Terms</h2>
+    <p>
+      We reserve the right to update or modify these Terms of Service at any time.
+      Continued use of the app after changes means you accept the updated terms.
+    </p>
+
+    <h2>8. Termination</h2>
+    <p>
+      We may suspend or terminate access to the app at any time if you violate
+      these terms or misuse the service.
+    </p>
+
+    <h2>9. Contact Us</h2>
+    <p>
+      If you have any questions about these Terms of Service, please contact us at:
+      <br />
+      <strong>Email:</strong> support@aquaalert.app
+    </p>
+  </div>
+
+  <footer>
+    © <span id="year"></span> AquaAlert. All rights reserved.
+  </footer>
+
+  <script>
+    // Auto set date
+    const today = new Date();
+    document.getElementById("lastUpdated").innerText =
+      today.toDateString();
+
+    document.getElementById("year").innerText =
+      today.getFullYear();
+  </script>
+</body>
+</html>
